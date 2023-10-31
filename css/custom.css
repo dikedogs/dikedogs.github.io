@@ -1,0 +1,4 @@
+
+.tm-navbar.scroll .navbar-brand{
+    filter: invert();
+}
