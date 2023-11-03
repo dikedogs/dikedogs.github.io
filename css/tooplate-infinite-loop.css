@@ -6,7 +6,11 @@ https://www.tooplate.com/view/2117-infinite-loop
 
 */
 
-@import url("https://fonts.googleapis.com/css?family=Raleway:100,300,400,500,700,900");
+@font-face {
+  font-family: Raleway;
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/Raleway-Regular.woff") format("woff2"); }
 
 body {
 	font-family: "Raleway", sans-serif;
