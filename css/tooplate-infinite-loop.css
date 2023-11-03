@@ -456,10 +456,6 @@ figure.effect-honey img {
   transition: opacity 0.35s;
 }
 
-figure.effect-honey:hover img {
-  opacity: 0.4;
-}
-
 figure.effect-honey figcaption::before {
   position: absolute;
   bottom: 0;
