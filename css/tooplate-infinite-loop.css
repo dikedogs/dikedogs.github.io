@@ -20,6 +20,17 @@ body {
   padding: 0;
   overflow-x: hidden;
 }
+
+.body{
+  min-height: 100vh;
+  position: relative;
+}
+.body::after {
+  content: '';
+  display: block;
+  height: 50px; /* Set same as footer's height */
+}
+
 a {
   transition: all 0.3s ease;
   color: #38B;
@@ -116,7 +127,9 @@ blockquote {
   color: white;
 }
 
-.tm-navbar.scroll .tm-nav-link {
+
+.tm-navbar.scroll .tm-nav-link,
+.white-nav-bar .tm-nav-link{
   color: #369;
 }
 
@@ -148,6 +161,16 @@ blockquote {
 
 /* Hero */
 
+#homeNoImg {
+  background-color: #FFFFFF;
+  /*height: 100vh;*/
+  /*position: relative;*/
+}
+
+
+.white-nav-bar .navbar-brand{
+  filter: invert();
+}
 #home {
 	background-color: #222;
   background-image: url(../img/infinite-loop-01.jpg);
@@ -596,6 +619,10 @@ figure.effect-honey:hover h2 i {
 	color: #fff;
 }
 
+.white-nav-bar{
+  background: white;
+}
+
 .tm-footer a:hover {
 	color: #9CF;
 }
@@ -612,6 +639,10 @@ figure.effect-honey:hover h2 i {
 
 p {
   line-height: 1.9;
+}
+
+.tm-footer-black a {
+  color: black;
 }
 
 @media (min-width: 768px) {
@@ -659,6 +690,11 @@ p {
     margin-top: 20px;
   }
 }
+
+/*.footer-container {*/
+/*  position: relative;*/
+/*  padding-bottom: 50px;*/
+/*}*/
 
 @media (max-width: 767px) {
 
