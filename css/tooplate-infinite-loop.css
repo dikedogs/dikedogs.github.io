@@ -60,13 +60,13 @@ blockquote {
 }
 
 .tm-section-pad-top {
-  padding-top: 80px;
-  padding-bottom: 40px;
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
 
 .tm-content-box {
-  padding-top: 20px;
-  padding-bottom: 40px;
+  padding-top: 30px;
+  padding-bottom: 10px;
 }
 
 .tm-text-primary {
@@ -532,10 +532,9 @@ figure.effect-honey:hover h2 i {
   background-color: #001828;
   background-position: center;
   background-repeat: no-repeat;
-  min-height: 980px;
   position: relative;
   padding-bottom: 50px;
-  padding-top: 100px;
+  padding-top: 50px;
 }
 
 .contact-item {
