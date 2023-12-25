@@ -543,6 +543,7 @@ figure.effect-honey:hover h2 i {
 }
 
 .contact-item {
+  font-size: 1rem;
   margin-left: 20px;
   margin-bottom: 50px;
   overflow: hidden;
