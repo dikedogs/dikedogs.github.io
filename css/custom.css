@@ -19,4 +19,12 @@
     width: 100%;
     height: auto;
 }
+a[data-fancybox="siteImagesViewer"]{
+    justify-content: center;
+    display: flex;
+}
+a[data-fancybox="siteImagesViewer"] img{
+    max-width: 225px;
+    object-fit: contain;
+}
 
