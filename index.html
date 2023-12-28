@@ -12,8 +12,10 @@
     <link rel="stylesheet" href="slick/slick-theme.css">
     <link rel="stylesheet" href="css/bootstrap.min.css" />
     <link rel="stylesheet" href="css/tooplate-infinite-loop.css" />
-    <link rel="stylesheet" href="css/custom.css" />
     <link rel="stylesheet" href="fancybox/fancybox.css" />
+    <link rel="stylesheet" href="fancybox/carousel.css" />
+    <link rel="stylesheet" href="fancybox/carousel.thumbs.css" />
+    <link rel="stylesheet" href="css/custom.css" />
 
 
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
@@ -268,40 +270,49 @@
 
                 </div>
             </div>
-            <div class="row">
-                <div class="col-12">
-                    <div class="mx-auto tm-gallery-container">
-                        <div class="grid tm-gallery">
-                            <a data-fancybox="galleryViewer" href="img/gallery-img-01.jpg">
-                                <img src="img/gallery-tn-01.jpg" alt="Image 1">
-                            </a>
-                            <a data-fancybox="galleryViewer" href="img/gallery-img-02.jpg">
-                                <img src="img/gallery-tn-02.jpg" alt="Image 2">
-                            </a>
-                            <a data-fancybox="galleryViewer" href="img/gallery-img-03.jpg">
-                                <img src="img/gallery-tn-03.jpg" alt="Image 3">
-                            </a>
-                            <a data-fancybox="galleryViewer" href="img/gallery-img-04.jpg">
-                                <img src="img/gallery-tn-04.jpg" alt="Image 4">
-                            </a>
-                            <a data-fancybox="galleryViewer" href="img/gallery-img-05.jpg">
-                                <img src="img/gallery-tn-05.jpg" alt="Image 5">
-                            </a>
-                            <a data-fancybox="galleryViewer" href="img/gallery-img-06.jpg">
-                                <img src="img/gallery-tn-06.jpg" alt="Image 6">
-                            </a>
-                            <a data-fancybox="galleryViewer" href="img/gallery-img-07.jpg">
-                                <img src="img/gallery-tn-07.jpg" alt="Image 7">
-                            </a>
-                            <a data-fancybox="galleryViewer" href="img/gallery-img-08.jpg">
-                                <img src="img/gallery-tn-08.jpg" alt="Image 8">
-                            </a>
-                            <a data-fancybox="galleryViewer" href="img/gallery-img-09.jpg">
-                                <img src="img/gallery-tn-09.jpg" alt="Image 8">
-                            </a>
-                        </div>
-
-
+            <div>
+                <div class="f-carousel" id="myCarousel">
+                    <div class="f-carousel__slide"
+                            data-thumb-src="img/gallery-tn-03.jpg"
+                            data-fancybox="galleryViewer"
+                            data-src="img/gallery-img-03.jpg">
+                        <img data-lazy-src="img/gallery-img-03.jpg"/>
+                    </div>
+                    <div class="f-carousel__slide"
+                            data-thumb-src="img/gallery-tn-04.jpg"
+                            data-fancybox="galleryViewer"
+                            data-src="img/gallery-img-04.jpg">
+                        <img data-lazy-src="img/gallery-img-04.jpg"/>
+                    </div>
+                    <div class="f-carousel__slide"
+                            data-thumb-src="img/gallery-tn-05.jpg"
+                            data-fancybox="galleryViewer"
+                            data-src="img/gallery-img-05.jpg">
+                        <img data-lazy-src="img/gallery-img-05.jpg"/>
+                    </div>
+                    <div class="f-carousel__slide"
+                         data-thumb-src="img/gallery-tn-06.jpg"
+                         data-fancybox="galleryViewer"
+                         data-src="img/gallery-img-06.jpg">
+                        <img data-lazy-src="img/gallery-img-06.jpg"/>
+                    </div>
+                    <div class="f-carousel__slide"
+                         data-thumb-src="img/gallery-tn-07.jpg"
+                         data-fancybox="galleryViewer"
+                         data-src="img/gallery-img-07.jpg">
+                        <img data-lazy-src="img/gallery-img-07.jpg"/>
+                    </div>
+                    <div class="f-carousel__slide"
+                         data-thumb-src="img/gallery-tn-08.jpg"
+                         data-fancybox="galleryViewer"
+                         data-src="img/gallery-img-08.jpg">
+                        <img data-lazy-src="img/gallery-img-08.jpg"/>
+                    </div>
+                    <div class="f-carousel__slide"
+                         data-thumb-src="img/gallery-tn-09.jpg"
+                         data-fancybox="galleryViewer"
+                         data-src="img/gallery-img-09.jpg">
+                        <img data-lazy-src="img/gallery-img-09.jpg"/>
                     </div>
                 </div>
             </div>
@@ -385,14 +396,22 @@
     <script src="js/jquery-1.9.1.min.js"></script>
     <script src="slick/slick.min.js"></script>
     <script src="fancybox/fancybox.umd.js"></script>
+    <script src="fancybox/carousel.umd.js"></script>
+    <script src="fancybox/carousel.thumbs.umd.js"></script>
     <script src="js/easing.min.js"></script>
     <script src="js/jquery.singlePageNav.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script>
 
-        Fancybox.bind("[data-fancybox]", {
+        new Carousel(
+            document.getElementById("myCarousel"),
+            {Thumbs: {type: "modern", Carousel: {fill: false, center: true}}, Dots: false, center: true},
+            {Thumbs}
+        );
+        Fancybox.bind('[data-fancybox="galleryViewer"]', {
             // Your custom options
         });
+
 
         function getOffSet() {
             var _offset = 450;
@@ -491,43 +510,6 @@
                 ]
             });
 
-            // Gallery
-            $('.tm-gallery').slick({
-                dots: true,
-                infinite: false,
-                slidesToShow: 5,
-                slidesToScroll: 2,
-                responsive: [
-                    {
-                        breakpoint: 1199,
-                        settings: {
-                            slidesToShow: 4,
-                            slidesToScroll: 2
-                        }
-                    },
-                    {
-                        breakpoint: 991,
-                        settings: {
-                            slidesToShow: 3,
-                            slidesToScroll: 2
-                        }
-                    },
-                    {
-                        breakpoint: 767,
-                        settings: {
-                            slidesToShow: 2,
-                            slidesToScroll: 1
-                        }
-                    },
-                    {
-                        breakpoint: 480,
-                        settings: {
-                            slidesToShow: 1,
-                            slidesToScroll: 1
-                        }
-                    }
-                ]
-            });
         });
     </script>
 </body>
