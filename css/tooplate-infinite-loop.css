@@ -653,9 +653,6 @@ p {
 }
 
 @media (min-width: 1200px) {
-  .container {
-    max-width: 1275px;
-  }
 
   .tm-container-gallery {
     max-width: 1290px;
