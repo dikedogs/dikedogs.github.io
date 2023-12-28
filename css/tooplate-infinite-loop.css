@@ -643,7 +643,7 @@ p {
 
 @media (min-width: 768px) {
   .tm-intro-text-container {
-    padding-left: 0px;
+    padding-left: 0px ;
   }
 
   .navbar-expand-md .navbar-nav .nav-link {
@@ -668,7 +668,6 @@ p {
 
 @media (max-width: 991px) {
   .tm-intro-text-container {
-    padding-left: 15px;
     padding-top: 30px;
     max-width: 600px;
     margin-left: auto;
