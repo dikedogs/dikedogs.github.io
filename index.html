@@ -112,9 +112,9 @@
 
                 </div>
 
-                <div class="col-lg-4 text-center" >
-                    <img style="max-width: 300px" src="img/gallery-img-04.jpg">
-                </div>
+                <a class="col-lg-4 text-center" data-fancybox="siteImagesViewer" href="img/gallery-img-04.jpg">
+                    <img style="max-width: 300px" src="img/gallery-tn-04.jpg">
+                </a>
             </div>
 
             <div class="row tm-content-box">
@@ -138,9 +138,9 @@
                     </div>
                 </div>
 
-                <div class="col-lg-4 text-center" >
-                    <img style="max-width: 300px" src="img/gallery-img-01.jpg">
-                </div>
+                <a class="col-lg-4 text-center" data-fancybox="siteImagesViewer" href="img/gallery-img-01.jpg">
+                    <img style="max-width: 300px" src="img/gallery-tn-01.jpg">
+                </a>
             </div>
 
 
@@ -164,9 +164,9 @@
                     </div>
                 </div>
 
-                <div class="col-lg-4 text-center" >
-                    <img style="max-width: 300px" src="img/gallery-img-09.jpg">
-                </div>
+                <a class="col-lg-4 text-center" data-fancybox="siteImagesViewer" href="img/gallery-img-09.jpg">
+                    <img style="max-width: 300px" src="img/gallery-tn-09.jpg">
+                </a>
 
             </div>
 
@@ -183,7 +183,7 @@
                 <div class="col-lg-4 text-center">
                     <a href="https://welpen.vdh.de/hunderassen/rasselexikon/zuechter/ewa-protsch"
                        target="_blank">
-                        <img src="https://welpen.vdh.de/plakette/8773" alt="">
+                        <img src="https://welpen.vdh.de/plakette/8773" style="max-width: 225px" alt="VDH Plakette">
                     </a>
                 </div>
             </div>
@@ -411,6 +411,10 @@
         Fancybox.bind('[data-fancybox="galleryViewer"]', {
             // Your custom options
         });
+        Fancybox.bind('[data-fancybox="siteImagesViewer"]', {
+            // Your custom options
+        });
+
 
 
         function getOffSet() {
