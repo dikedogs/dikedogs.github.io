@@ -211,7 +211,7 @@ blockquote {
 
 .tm-hero-text-container {
   background-image: url('../img/welcome.jpg');
-  background-repeat: no-repeat;  
+  background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
   width: 100%;
@@ -643,7 +643,7 @@ p {
 
 @media (min-width: 768px) {
   .tm-intro-text-container {
-    padding-left: 0px;
+    padding-left: 0px ;
   }
 
   .navbar-expand-md .navbar-nav .nav-link {
@@ -653,9 +653,6 @@ p {
 }
 
 @media (min-width: 1200px) {
-  .container {
-    max-width: 1275px;
-  }
 
   .tm-container-gallery {
     max-width: 1290px;
@@ -668,7 +665,6 @@ p {
 
 @media (max-width: 991px) {
   .tm-intro-text-container {
-    padding-left: 15px;
     padding-top: 30px;
     max-width: 600px;
     margin-left: auto;

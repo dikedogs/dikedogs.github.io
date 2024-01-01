@@ -2,3 +2,29 @@
 .tm-navbar.scroll .navbar-brand{
     filter: invert();
 }
+
+
+#myCarousel {
+    max-width: 640px;
+    margin: 0 auto;
+}
+
+#myCarousel .f-carousel__slide {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#myCarousel .f-carousel__slide img {
+    width: 100%;
+    height: auto;
+}
+a[data-fancybox="siteImagesViewer"]{
+    justify-content: center;
+    display: flex;
+}
+a[data-fancybox="siteImagesViewer"] img{
+    max-width: 225px;
+    object-fit: contain;
+}
+
