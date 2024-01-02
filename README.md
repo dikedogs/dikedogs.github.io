@@ -11,3 +11,6 @@ Images need to have thumbnails generated. The image `img` is the full sized imag
 
 - Page speed analysis
     -https://pagespeed.web.dev/analysis/https-dikedogs-de/48k2m9q7cg?hl=DE&form_factor=mobile
+
+- Testen vor dem Committ
+    'Go Live' in der rechten unteren Ecke öffnet die Seite lokal auf. Wenn die Seite bereits lokal auf ist steht heisst es 'Port:5500'        
